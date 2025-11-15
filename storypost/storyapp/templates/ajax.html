@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,13 +6,12 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello how are you</h1>
     <button id="ajaxBtn">Test AJAX</button>
     <div id="result"></div>
 
     <script>
       document.getElementById("ajaxBtn").addEventListener("click", function () {
-        fetch("/test-response/")
+        fetch("/test-ajax/")
           .then((response) => response.json())
           .then((data) => {
             document.getElementById("result").innerText = data.status;
@@ -20,4 +19,17 @@
       });
     </script>
   </body>
+</html> -->
+
+
+<!-- ajax.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajax Test</title>
+</head>
+<body>
+    <h1>Testing ajax</h1>
+    <h1>{{ status }}</h1>
+</body>
 </html>
