@@ -48,3 +48,23 @@ You will instantly see the yellow underline disappear as soon as you select the 
 when first time pushing code to the new branch below cmd should be used
 
 $ git push -u origin LekhDev
+
+
+
+
+
+
+
+
+
+
+
+
+
+for starting mongodb 
+
+net start MongoDB
+
+for stopping mongodb
+ 
+net stop MongoDB
