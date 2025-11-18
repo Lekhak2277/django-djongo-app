@@ -14,12 +14,11 @@ def user_form(request):
         email = request.POST.get("email")
         age = request.POST.get("age")
 
-
         #for debugging print whether the data is going
+        new_user = User.objects.create(name=name, email=email, age=age)
 
-        print("Saving",name,email,age)
+        print("Saving",name,email,age,new_user.id)
 
-        User.objects.create(name=name, email=email, age=age)
         return redirect("user_form")  # reload page after submit
 
     users = User.objects.all()
